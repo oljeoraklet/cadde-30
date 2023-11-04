@@ -17,6 +17,7 @@ ul {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+	margin-bottom: 3rem;
 }
 
 button {
@@ -29,4 +30,7 @@ button {
 #party {
 	background-color: pink;
 	width: 18rem;
+	height: 6rem;
+	box-sizing: border-box;
+	border: 5px solid black;
 }
