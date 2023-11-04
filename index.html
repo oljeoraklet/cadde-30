@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="audio-player">
+			<audio id="audio1" controls>
+				<source src="/Inspelningar/August & Amanda_1.wav" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<ul>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Elma_1.wav')">Elma</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Ewa_&_Per_1.wav')">
+					Ewa & Per
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Guggy_1.wav')">Guggy</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Gustav_Ekdahl_1.wav')">
+					Gustav Ekdahl
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Hanna_Wahlgren_1.wav')">
+					Hanna Wahlgren
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Hans-Oscar_Fossum_1.wav')">
+					Hans-Oscar Fossum
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Håkan_Wallgren_1.wav')">
+					Håkan Wallgren
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Jacob_Brobeck_1.wav')">
+					Jacob Brobeck
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Karin_&_Erik_1.wav')">
+					Karin & Erik
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Karolina_1.wav')">
+					Karolina
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Malin_Lindroth_1.wav')">
+					Malin Lindroth
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Matilda_Sköld_1.wav')">
+					Matilda
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Niklas_Jönsson_1.wav')">
+					Niklas Jönsson
+				</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Rio_1.wav')">Rio</button>
+			</li>
+			<li>
+				<button onclick="playAudio('/Inspelningar/Sara_Kouns_1.wav')">
+					Sara Kouns
+				</button>
+			</li>
+			<!-- Add more list items for more audio clips -->
+		</ul>
+		<button id="party">SATIS-CADDE</button>
+		<script>
+			// Function to play audio files
+			function playAudio(audioSrc) {
+				var audioPlayer = document.getElementById("audio1");
+				audioPlayer.src = audioSrc;
+				audioPlayer.play();
+			}
+		</script>
+	</body>
+</html>
